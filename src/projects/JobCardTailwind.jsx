@@ -85,7 +85,21 @@ import { FaLocationDot } from "react-icons/fa6";
       role: "Backend Developer",
       salary: "$70/hour",
       location: "Bangalore, India"
-    }
+    },
+    {
+      brandLogo:"https://www.pngarts.com/files/11/Google-Logo-Icon-PNG-Photo.png",
+      company: "Google",
+      role: "Cloud Engineer",
+      salary: "$85/hour",
+      location: "Hyderabad, India"
+    },
+     {
+    brandLogo: "https://static.vecteezy.com/system/resources/previews/019/017/459/large_2x/microsoft-transparent-logo-free-png.png",
+    company: "Microsoft",
+    role: "Data Scientist",
+    salary: "$90/hour",
+    location: "Pune, India"
+     }
   ];
 
 
