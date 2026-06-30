@@ -1,7 +1,7 @@
-import PasswordToggle from "./projects/PasswordToggle";
+import DarkModeToggle from "./projects/DarkModeToggle";
 
 function App() {
-  return <PasswordToggle />  
+  return <DarkModeToggle />  
 }
 
 export default App;
