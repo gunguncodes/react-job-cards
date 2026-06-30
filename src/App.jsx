@@ -1,7 +1,7 @@
-import LikeButton from "./projects/LikeButton";
+import Counter from "./projects/Counter";
 
 function App() {
-  return <LikeButton />  
+  return <Counter />  
 }
 
 export default App;
