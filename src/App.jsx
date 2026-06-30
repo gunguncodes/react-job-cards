@@ -1,7 +1,7 @@
-import JobCardTailwind from "./projects/JobCardTailwind";
+import LikeButton from "./projects/LikeButton";
 
 function App() {
-  return <JobCardTailwind />  
+  return <LikeButton />  
 }
 
 export default App;
