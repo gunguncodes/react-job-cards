@@ -1,7 +1,7 @@
-import Counter from "./projects/Counter";
+import PasswordToggle from "./projects/PasswordToggle";
 
 function App() {
-  return <Counter />  
+  return <PasswordToggle />  
 }
 
 export default App;
