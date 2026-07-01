@@ -1,7 +1,7 @@
-import DarkModeToggle from "./projects/DarkModeToggle";
+import ToDoApp from "./projects/ToDoApp";
 
 function App() {
-  return <DarkModeToggle />  
+  return <ToDoApp />  
 }
 
 export default App;
