@@ -1,7 +1,7 @@
-import LoginForm from "./projects/LoginForm";
+import GitHubProfileFinder from "./projects/GitHubProfileFinder";
 
 function App() {
-  return <LoginForm />  
+  return <GitHubProfileFinder />  
 }
 
 export default App;
