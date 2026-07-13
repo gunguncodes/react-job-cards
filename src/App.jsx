@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import Product from "./pages/product";
 
 function App() {
     return (
@@ -67,6 +68,17 @@ function App() {
                     Dashboard 
                 </NavLink>
 
+                <NavLink
+                    to="/product/:id"
+                    className={({isActive})=>
+                    isActive
+                    ? "text-yellow-300 font-bold"
+                    : "text-white"
+                    }
+                >  
+                    Product 
+                </NavLink>
+
             </nav>
 
             <Routes>
@@ -75,7 +87,8 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound/>} />
                 <Route path="/login" element={<Login/>} />
-                <Route path="dashboard" element={<Dashboard/>} />
+                <Route path="/dashboard" element={<Dashboard/>} />
+                <Route path="/product/:id" element={<Product/>} />
             </Routes>
         </>
     );
