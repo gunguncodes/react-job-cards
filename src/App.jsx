@@ -5,8 +5,11 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
 import Product from "./pages/product";
+import DashboardLayout from "./pages/DashboardLayout";
+import Profile from "./pages/Profile";
+import Orders from "./pages/Orders";
+import Settings from "./pages/Settings";
 
 function App() {
     return (
@@ -69,7 +72,7 @@ function App() {
                 </NavLink>
 
                 <NavLink
-                    to="/product/:id"
+                    to="/product/25"
                     className={({isActive})=>
                     isActive
                     ? "text-yellow-300 font-bold"
@@ -77,6 +80,39 @@ function App() {
                     }
                 >  
                     Product 
+                </NavLink>
+
+                 <NavLink
+                    to="/dashboard/profile"
+                    className={({isActive})=>
+                    isActive
+                    ? "text-yellow-300 font-bold"
+                    : "text-white"
+                    }
+                >  
+                    Profile
+                </NavLink>
+
+                 <NavLink
+                    to="/dashboard/orders"
+                    className={({isActive})=>
+                    isActive
+                    ? "text-yellow-300 font-bold"
+                    : "text-white"
+                    }
+                >  
+                    Orders
+                </NavLink>
+
+                 <NavLink
+                    to="/dashboard/settings"
+                    className={({isActive})=>
+                    isActive
+                    ? "text-yellow-300 font-bold"
+                    : "text-white"
+                    }
+                >  
+                    Settings 
                 </NavLink>
 
             </nav>
@@ -87,8 +123,12 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<NotFound/>} />
                 <Route path="/login" element={<Login/>} />
-                <Route path="/dashboard" element={<Dashboard/>} />
                 <Route path="/product/:id" element={<Product/>} />
+                <Route path="/dashboard" element={<DashboardLayout />}>
+                    <Route path="profile" element={<Profile />} />
+                    <Route path="orders" element={<Orders />} />
+                    <Route path="settings" element={<Settings />} />
+                </Route>
             </Routes>
         </>
     );
